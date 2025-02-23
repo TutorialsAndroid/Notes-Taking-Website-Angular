@@ -1,59 +1,106 @@
-# Notestakingwebsite
+# 📝 Notes Taking Website
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8.
+A **beautiful** and **responsive** Notes Taking Web Application built with **Angular** and **MySQL**, featuring full CRUD (Create, Read, Update, Delete) operations.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Features
 
-```bash
+✅ **Create, Read, Update, and Delete Notes**  
+✅ **Beautiful & Responsive UI (Angular + Material UI)**  
+✅ **SQL Database Integration (MySQL)**  
+✅ **REST API with Node.js & Express (Backend)**  
+✅ **Standalone Angular Components**  
+✅ **Deployed with Vite for Faster Performance**  
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Usage |
+|------------|-------|
+| Angular 16+ | Frontend Framework |
+| TypeScript | Strongly-Typed JavaScript |
+| MySQL | Database |
+| Node.js & Express | Backend API |
+| Angular Material | UI Components |
+| Vite | Fast Dev Server |
+
+---
+
+## 📸 Screenshots
+
+![Dashboard](./screenshot/Screenshot_23-2-2025_18754_localhost.jpeg) <!-- Replace with actual screenshot -->
+
+---
+
+## 📦 Installation & Setup
+
+Follow these steps to run the project locally:
+
+### 🔹 1. Clone the Repository
+```sh
+git clone https://github.com/TutorialsAndroid/Notes-Taking-Website-Angular.git
+cd Notes-Taking-Website-Angular
+```
+
+### 🔹 2. Install Dependencies
+```sh
+npm install
+```
+
+### 🔹 3. Setup the MySQL Database
+1. Open MySQL Workbench or any MySQL client.
+2. Run the SQL script to create the database and tables:
+```sql
+CREATE DATABASE notes_db;
+USE notes_db;
+CREATE TABLE notes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+3. Update database credentials in `server/config.js`.
+
+### 🔹 4. Start the Backend Server
+```sh
+node server.js
+```
+
+### 🔹 5. Start the Angular Frontend
+```sh
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+🚀 Now, open **`http://localhost:4200`** in your browser!
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🤝 Contributing
+Contributions are always welcome! Follow these steps to contribute:
 
-```bash
-ng generate component component-name
-```
+1. **Fork** the repository 🍴
+2. **Create a branch** for your feature (`git checkout -b feature-name`)
+3. **Commit your changes** (`git commit -m 'Add feature'`)
+4. **Push to your branch** (`git push origin feature-name`)
+5. Open a **Pull Request** 🎉
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 🛡️ License
+This project is licensed under the **MIT License**. See the **LICENSE** file for details.
 
-## Building
+---
 
-To build the project run:
+## 📬 Contact
+For any questions or suggestions, feel free to reach out:
+📧 Email: [Akshay](mailto:akshaysunilmasram@yahoo.com)  
+💻 GitHub: [TutorialsAndroid](https://github.com/TutorialsAndroid)  
+🐦 Twitter: [Instagram](https://instagram.com/coderx09)  
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+🔗 **Give this repo a ⭐ if you like it!**
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
